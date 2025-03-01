@@ -23,7 +23,7 @@ const TaskComponent: React.FC<TaskProps> = ({ task, onDelete, onToggle }) => {
       <button onClick={() => onToggle(task.id)} style={{ marginRight: '8px' }}>
         {task.isCompleted ? 'Undo' : 'Complete'}
       </button>
-      <button onClick={() => onDelete(task.id)}>Delete</button>
+      <button onClick={() => onDelete(task.id)}>Удалить</button>
     </div>
   );
 };
