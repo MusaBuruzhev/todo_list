@@ -12,7 +12,7 @@ interface TaskListProps {
 const TaskListComponent: React.FC<TaskListProps> = ({ tasks, onDelete, onToggle }) => {
   return (
     <div>
-      {tasks.length === 0 && <p>No tasks added yet.</p>}
+      {tasks.length === 0 && <p>Задач нету! Добавьте пожалуйста и обновите страницу</p>}
       {tasks.map(task => (
         <TaskComponent key={task.id} task={task} onDelete={onDelete} onToggle={onToggle} />
       ))}
